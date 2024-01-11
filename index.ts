@@ -6,6 +6,7 @@ const name = [];
 for (let i = 0; i < 3; i++) {
   const bucket = new gcp.storage.Bucket(`tydev-my-bucket-${i}`, {
     location: "US",
+    project: "statsig-services",
   });
   name.push(bucket.id);
 }
