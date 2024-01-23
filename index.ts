@@ -3,7 +3,7 @@ import * as pulumi from "@pulumi/pulumi";
 
 import { createBucket } from "./resources/gcp/storage/buckets";
 
-let buckets = createBucket("tydev-bucket", 6);
+let buckets = createBucket("tydev-bucket", 2);
 
 // // Import the program's configuration settings.
 // const config = new pulumi.Config();
