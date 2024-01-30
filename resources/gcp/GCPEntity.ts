@@ -1,7 +1,7 @@
-import ICloudEntity from "../ICloudEntity";
+// import ICloudEntity from "../ICloudEntity";
 
-export abstract class GCPEntity implements ICloudEntity {
-  name: string;
-  env: string;
-  cloudType = "GCP";
-}
+// export abstract class GCPEntity implements ICloudEntity {
+//   name: string;
+//   env: string;
+//   cloudType = "GCP";
+// }
