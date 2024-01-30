@@ -1,7 +1,7 @@
 import * as gcp from "@pulumi/gcp";
 import * as pulumi from "@pulumi/pulumi";
 
-import { createBucket } from "./resources/gcp/storage/createBucket";
+import { createBucket } from "./resources/gcp/storage/buckets";
 
 let buckets = createBucket("tydev-bucket-hello", 1);
 

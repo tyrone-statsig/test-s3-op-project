@@ -1,0 +1,9 @@
+{
+  "resources": [
+    {
+      "type": "gcp:storage/bucket:Bucket",
+      "id": "log-event-latest",
+      "name": "statsig-services/log-event-latest"
+    }
+  ]
+}

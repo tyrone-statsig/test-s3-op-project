@@ -8,11 +8,16 @@ import { GCPEntity } from "../GCPEntity";
 
 export class StorageBucket extends GCPEntity {
   bucketSchema: gcp.storage.BucketArgs;
-  customResourceOptions: CustomResourceOptions;
+  customResourceOptions: CustomResourceOptions | undefined;
   // create a constructor that takes in the bucket name and the bucket schema
-  constructor(name: string, schema: BucketArgs) {
+  constructor(
+    name: string,
+    schema: BucketArgs,
+    customResourceOptions?: CustomResourceOptions
+  ) {
     super();
     this.bucketSchema = schema;
+    this.customResourceOptions = customResourceOptions;
   }
 }
 
